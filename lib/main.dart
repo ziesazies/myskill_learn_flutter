@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:myskill_learn_fllutter/pages/media_integration_page.dart';
+import 'package:myskill_learn_fllutter/pages/todo_page.dart';
 import 'package:provider/provider.dart' as provider;
 import 'package:myskill_learn_fllutter/models/counter_model.dart';
 import 'package:myskill_learn_fllutter/pages/counting_page.dart';
@@ -30,7 +32,9 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
         routes: {
-          '/': (context) => const LoginPage(),
+          '/': (context) => const MediaIntegrationPage(),
+          // '/': (context) => const TodoPage(),
+          // '/': (context) => const LoginPage(),
           // '/': (context) => const CountingPage(),
           // '/second':
           //     (context) =>
